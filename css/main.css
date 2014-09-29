@@ -404,24 +404,31 @@ Globals
 	Sass variable, mixins, plugins, etc. that are used throughout the entore site.
 */
 @font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJRMZUMTqD9S0syfqvqacjFo.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-@font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Yanone Kaffeesatz Bold"), local("YanoneKaffeesatz-Bold"), url(http://fonts.gstatic.com/s/yanonekaffeesatz/v7/We_iSDqttE3etzfdfhuPRWOaRr2aRL0G9SOCibVUDmoU24FapfJwyacJ6xNu5rm9.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-@font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Dosis';
   font-style: normal;
   font-weight: 300;
-  src: local("Roboto Slab Light"), local("RobotoSlab-Light"), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJZ7-ASEDocFpVYx1Gz4aSTw.woff2) format("woff2");
+  src: local("Dosis Light"), local("Dosis-Light"), url(http://fonts.gstatic.com/s/dosis/v4/7aJzV14HzAOiwNTiPgucGRkAz4rYn47Zy2rvigWQf6w.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Dosis Regular"), local("Dosis-Regular"), url(http://fonts.gstatic.com/s/dosis/v4/oaBFj7Fz9Y9_eW3k9Jd9X4DGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Droid Serif"), local("DroidSerif"), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaJQV2lvL5Ba9FjAYK6Lx0Qk.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url(http://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5893g2OlVIdL8hHNlffo755yo.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* 
@@ -429,30 +436,70 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 body {
-  background-color: #fff;
-  font-family: 'Roboto Slab', georgia, serif;
+  background-color: #c1faff;
+  font-family: 'Dosis', georgia, serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
   font-size: 1.125rem;
+  line-height: 1.4;
   margin: 0 auto;
   max-width: 550px;
   width: 100%;
 }
 
+h1 {
+  font-family: 'Droid Serif', helvetica, verdana, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 78px;
+  font-size: 4.875rem;
+  line-height: 1;
+  text-align: center;
+  border-style: solid;
+  border-color: #287EC7;
+  border-bottom: 6px;
+}
+
+h2 {
+  border-top: dashed;
+  border-color: #fff;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 32px;
+  font-size: 2rem;
+  border-style: dashed;
+  border-color: #fff;
+  padding: 4px 5px 6px 5px;
+  text-align: center;
+}
+
+ol {
+  font-size: 33px;
+  font-size: 2.0625rem;
+  font-family: 'Dosis', georgia, serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+}
+
 img {
   height: auto;
-  max-width: 100%;
+  max-width: 555px;
+  text-align: center;
+  padding: 5px 6px 7px 6px;
 }
 
 nav {
-  background-color: #fff;
-  border: 1px solid #e6e3e3;
+  background-color: #e0f8ff;
+  border: 1px solid #d3fbff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  border-top: none;
-  margin-left: 10px;
-  padding: 4px 10px 6px 10px;
+  border-top: 6px;
+  padding: 4px 5px 6px 5px;
   position: fixed;
 }
 
@@ -464,40 +511,70 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 6px 0 0;
-  padding: 0;
+  margin: 0 6px;
 }
 
-nav ul li:last-of-type {
-  margin-right: 0;
-}
-
-a {
-  color: #242424;
-  font-family: 'Roboto Slab', georgia, serif;
-  font-style: normal;
-  font-weight: 700;
-  transition: color 350ms linear;
-}
-
-a:hover {
-  color: #8a8a8a;
-  transition: color 350ms linear;
-}
-
-h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz', helvetica, verdana, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1;
+nav, main, footer[role="contentinfo"] {
+  margin: 0 10px;
 }
 
 article h1 {
-  color: #c45353;
-  font-size: 66px;
-  font-size: 4.125rem;
-  margin: 48px 0 48px 0;
+  color: #1a0303;
+  font-size: 56px;
+  font-size: 3.5rem;
+  margin: 48px 0;
   text-transform: capitalize;
+}
+
+article p:first-of-type {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+article p:second-of-type {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+article div {
+  color: #1a0707;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-family: 'Droid Serif', georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 20px 0;
+  line-height: 1;
+  text-align: center;
+}
+
+footer[role="complementary"] {
+  border-bottom: 1px #fff dashed;
+  border-top: 1px #fff dashed;
+  color: #1a0707;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+footer[role="complementary"] p {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+footer[role="contentinfo"] small {
+  border-top: 1px #989898 solid;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-bottom: 20px;
 }
 
 /* 
